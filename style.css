@@ -1,0 +1,89 @@
+/*
+Date Start : 30/09/2020
+Author     : thuysddoox
+version    :
+*/
+
+
+/*
+============= Table of content ==================
+
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0A0A2A;
+    opacity: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: auto;
+    padding: 0;
+}
+
+.clock {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myCanvas {
+    background-color: #111111;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+@keyframes lightborder {
+    25% {
+        border-color: #29b9da;
+    }
+}
+
+@keyframes lighttext {
+    0% {
+        color: #01DF74;
+    }
+    25% {
+        color: #F7FE2E;
+    }
+    30% {
+        color: #12d6e1;
+    }
+    50% {
+        color: #FF00FF;
+    }
+    70% {
+        color: #848484;
+    }
+    85% {
+        color: #FF8000;
+    }
+    100% {
+        color: #F5D0A9;
+    }
+}
+
+#calender {
+    animation: lighttext 20s 2s infinite reverse;
+    position: relative;
+    width: 50rem;
+    height: 15vh;
+    margin: auto;
+    background-color: #111111;
+    color: #01DF74;
+    font-Weight: bold;
+    font-family: monospace;
+    font-size: 80px;
+    text-align: center;
+    outline: solid 10px #58FA82;
+}
